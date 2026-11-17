@@ -10,7 +10,8 @@
    * Leave empty until the endpoint is deployed. In that case the form
    * intentionally does NOT show a false success/registration message.
    */
-  const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/library/d/1j0j1DXERbbiCuCZJeudFlLpoQpRnm67uFLq5zcovkYFENvNyt6fHOy_n/2";
+
+const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw_q97bewHhqkWTuKpUujZN9p3RLTUTAeV0wfny7Vu2h2-_9z-gXNng0AvE3-5cnL-i8w/exec";
 
   const screens = {
     welcome: document.getElementById("screen-welcome"),
