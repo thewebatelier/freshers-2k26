@@ -167,7 +167,7 @@ const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw_q97be
         if (currentScreen === "journey" && currentStage === "success") {
           showStage("suspense");
         }
-      }, 1900);
+      }, 4000);
     } catch (error) {
       formStatus.textContent = error instanceof Error
         ? error.message
