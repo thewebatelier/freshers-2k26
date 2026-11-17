@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1426">
+  <meta name="description" content="Samskruti College of Engineering & Technology presents Freshers 2K26. Your invitation starts here.">
+  <title>Freshers 2K26 — Samskruti College of Engineering &amp; Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main id="experience" class="experience">
+    <!-- SCREEN 1: WELCOME -->
+    <section id="screen-welcome" class="screen screen-welcome is-active" aria-labelledby="welcome-title">
+      <header class="site-header entrance">
+        <a class="wordmark" href="#welcome" aria-label="SCT home">SCT<span>.</span></a>
+        <span class="edition-label">SCT PRESENTS <i aria-hidden="true">·</i> THE 2026 EDITION</span>
+      </header>
+
+      <div class="welcome-content">
+        <p class="eyebrow entrance entrance-delay-1">A NEW CHAPTER STARTS HERE</p>
+        <h1 id="welcome-title" class="hero-title">
+          <span class="title-line entrance entrance-delay-2">HEY, NEWBIES!</span>
+          <span class="title-line title-accent entrance entrance-delay-3">FRESHERS, IT'S YOUR ERA!</span>
+        </h1>
+        <p class="intro-copy entrance entrance-delay-4">New faces. New chaos. New memories. Something exciting is waiting for you.</p>
+        <button id="start-button" class="primary-button entrance entrance-delay-5" type="button">
+          LET'S GET INTO IT <span aria-hidden="true">→</span>
+        </button>
+      </div>
+
+      <footer class="site-footer entrance entrance-delay-5">
+        <span>SAMSKRUTI COLLEGE OF ENGINEERING &amp; TECHNOLOGY</span>
+        <span>21 NOVEMBER 2026</span>
+      </footer>
+    </section>
+
+    <!-- SCREEN 2: ONE SCREEN, THREE CONTROLLED STAGES -->
+    <section id="screen-journey" class="screen screen-journey" aria-label="Student check-in" hidden>
+      <header class="site-header">
+        <a class="wordmark" href="#welcome" aria-label="SCT home">SCT<span>.</span></a>
+        <span class="edition-label">FRESHERS <i aria-hidden="true">·</i> 2K26</span>
+      </header>
+
+      <div class="journey-content" aria-live="polite" aria-atomic="true">
+        <!-- STAGE A -->
+        <div id="stage-form" class="journey-stage is-current">
+          <p class="eyebrow">BEFORE THE BIG REVEAL</p>
+          <h1 class="section-title">WAITTT... WHO'S THIS?</h1>
+          <p class="section-copy">Before we spill the tea, let's get to know you!</p>
+
+          <form id="student-form" class="student-form" novalidate>
+            <div class="field-group">
+              <label for="student-name">YOUR NAME</label>
+              <input id="student-name" name="name" type="text" placeholder="Enter your full name..." autocomplete="name" maxlength="100" required>
+              <p class="field-error" id="name-error"></p>
+            </div>
+            <div class="field-group">
+              <label for="roll-number">ROLL NUMBER</label>
+              <input id="roll-number" name="rollNumber" type="text" placeholder="Enter your roll number..." autocomplete="off" maxlength="40" required>
+              <p class="field-error" id="roll-error"></p>
+            </div>
+            <p class="form-status" id="form-status" role="status"></p>
+            <button id="submit-button" class="primary-button form-button" type="submit">
+              <span class="button-label">SUBMIT &amp; CONTINUE</span> <span aria-hidden="true">→</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- STAGE B -->
+        <div id="stage-success" class="journey-stage" hidden>
+          <p class="eyebrow">CHECK-IN COMPLETE</p>
+          <h1 class="section-title"><span id="first-name">SLAY</span>!</h1>
+          <h2 class="section-title secondary-title">YOU'RE ON THE LIST.</h2>
+          <p class="section-copy">You're officially part of the excitement!</p>
+        </div>
+
+        <!-- STAGE C -->
+        <div id="stage-suspense" class="journey-stage" hidden>
+          <p class="eyebrow">ONE LAST THING...</p>
+          <h1 class="section-title">THE PLOT IS ABOUT TO DROP.</h1>
+          <p class="section-copy">You didn't scan that QR for nothing. Ready for the surprise?</p>
+          <button id="unlock-button" class="primary-button" type="button">
+            UNLOCK THE SURPRISE <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </div>
+
+      <footer class="site-footer journey-footer">
+        <span>SAMSKRUTI COLLEGE OF ENGINEERING &amp; TECHNOLOGY</span>
+        <span>21 NOVEMBER 2026</span>
+      </footer>
+    </section>
+
+    <!-- SCREEN 3: ORIGINAL INVITATION -->
+    <section id="screen-reveal" class="screen screen-reveal" aria-labelledby="reveal-title" hidden>
+      <header class="site-header reveal-header">
+        <a class="wordmark" href="#welcome" aria-label="SCT home">SCT<span>.</span></a>
+        <span class="edition-label">SAMSKRUTI <i aria-hidden="true">·</i> 2K26</span>
+      </header>
+
+      <div class="reveal-content">
+        <div class="reveal-heading">
+          <p class="eyebrow reveal-item">THE WAIT IS OVER</p>
+          <h1 id="reveal-title" class="section-title reveal-item">IT'S HAPPENING!</h1>
+          <h2 class="reveal-subtitle reveal-item">FRESHERS 2K26</h2>
+          <p class="reveal-caption reveal-item">YOUR INVITATION IS HERE.</p>
+        </div>
+
+        <figure class="banner-wrap">
+          <img class="banner-image" src="images/banner.jpg" alt="Original Freshers 2K26 invitation banner" fetchpriority="high">
+        </figure>
+
+        <p class="final-line">SEE YOU THERE. DON'T MISS IT.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
