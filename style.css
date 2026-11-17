@@ -357,3 +357,67 @@ button { -webkit-tap-highlight-color: transparent; }
     max-width: 100%;
   }
 }
+
+
+
+.field-group label {
+  text-align: left;
+  display: block;
+}
+
+/* Left-align form labels */
+.field-group label {
+  display: block;
+  text-align: left;
+}
+
+
+/* FIRST PAGE — PERFECT CENTER ALIGNMENT */
+
+.screen-welcome .welcome-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(28px, 6vh, 64px) 0;
+}
+
+.screen-welcome .eyebrow {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.screen-welcome .hero-title {
+  width: 100%;
+  text-align: center;
+}
+
+.screen-welcome .title-line {
+  text-align: center;
+}
+
+.screen-welcome .title-accent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screen-welcome .intro-copy {
+  max-width: 540px;
+  margin: 24px auto 32px;
+  text-align: center;
+}
+
+.screen-welcome .primary-button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FORM LABELS — LEFT ALIGNMENT */
+.field-group label {
+  display: block;
+  text-align: left;
+}
