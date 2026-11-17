@@ -282,3 +282,78 @@ button { -webkit-tap-highlight-color: transparent; }
   .banner-image { opacity: 1; transform: none; }
   .final-line, .reveal-item { opacity: 1; }
 }
+
+
+
+
+
+/* =====================================================
+   FRESHERS 2K26 — CENTER ALIGNMENT UPDATE
+   ===================================================== */
+
+.welcome-content,
+.journey-stage,
+.reveal-heading,
+.final-line {
+  text-align: center;
+}
+
+/* Center descriptive text */
+.intro-copy,
+.section-copy {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center the welcome button */
+.welcome-content > .primary-button {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Keep the form neatly centered */
+.student-form {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Center field labels and status messages */
+.field-group label,
+.form-status {
+  text-align: center;
+}
+
+/* Keep typed input text naturally left-aligned */
+.field-group input {
+  text-align: left;
+}
+
+/* Center buttons on the journey stages */
+.journey-stage > .primary-button:not(.form-button) {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center footer information */
+.site-footer {
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px 0;
+  }
+
+  .site-footer span:first-child {
+    max-width: 100%;
+  }
+}
